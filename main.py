@@ -4,7 +4,7 @@ import tri_insertion
 import tri_selection 
 from random import randint
 
-tab = [273, 8732, 81, 0, 823, 6, 354, 12, 56]
+tab = [1, 2, 4, 3]
 
 print(tri_selection.tri_selection(tab))
 print(tri_insertion.tri_insertion(tab))

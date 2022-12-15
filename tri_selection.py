@@ -15,12 +15,14 @@ def tri_selection(tab):
                 comparaison_selection += 1
                 min = j
                 
+                tempo = tab[i]
+                tab[i] = tab[min]
+                tab[min] = tempo
+                
             else:
                 comparaison_selection += 1
                 
-        tempo = tab[i]
-        tab[i] = tab[min]
-        tab[min] = tempo
+        
     
     affectation_selection = echanges_selection * 3 
     return tab, comparaison_selection, echanges_selection, affectation_selection
