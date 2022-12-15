@@ -1,10 +1,10 @@
 
-PROCEDURE tri_bulle_opti(param TABLEAU)
+PROCEDURE tri_bulle_norm(param TABLEAU)
 
 permut <- TRUE
 
-comparaisons_tri_bulle_opti <- 0
-echanges_tri_bulle_opti <- 0
+comparaisons_tri_bulle_norm <- 0
+echanges_tri_bulle_norm <- 0
 
 repetition <- 0
     
@@ -22,15 +22,15 @@ repetition <- 0
 
                 ECHANGER TABLEAU[i] ET TABLEAU[i + 1]
 
-                comparaisons_tri_bulle_opti <- comparaisons_tri_bulle_opti + 1
-                echanges_tri_bulle_opti <- echanges_tri_bulle_opti + 3
+                comparaisons_tri_bulle_norm <- comparaisons_tri_bulle_norm + 1
+                echanges_tri_bulle_norm <- echanges_tri_bulle_norm + 3
 
             SINON 
 
-                comparaisons_tri_bulle_opti <- comparaisons_tri_bulle_opti + 1
+                comparaisons_tri_bulle_norm <- comparaisons_tri_bulle_norm + 1
 
             FIN SI
 
         FIN POUR
 
-FIN tri_bulle_normal
+FIN tri_bulle_norm
