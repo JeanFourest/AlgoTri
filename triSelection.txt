@@ -1,14 +1,20 @@
 DÉBUT TriSelection(paramètre tableau)
-    compteur <- 0
+
     POUR i JUSQU'À longueur(tableau) FAIRE
     minimum <- i
+
     POUR j VARIANT DE i+1 JUSQU'À longueur(tableau) FAIRE
+
         Si tableau(minimum) > tableau(j) ALORS
             minimum <- j
         FIN SI
+
     tempo <- tableau(i)
     tableau(i) <- tableau(minimum)
     tableau(minimum) <- tempo
+
     FIN POUR
+
     RENVOIE tableau
+    
 FIN TriSelection
