@@ -1,7 +1,7 @@
-def tri_bulle_norm(list):
+def tri_bulle_opti(list):
 
-    echanges = 0
-    comparaisons = 0
+    echanges_bulle_opti = 0
+    comparaisons_bulle_opti = 0
     
     #longueur du tableau
     long_tableau = len(list)
@@ -16,13 +16,13 @@ def tri_bulle_norm(list):
                 list[j], list[j + 1] = list[j + 1], list[j]
 
                 #les compteurs
-                echanges += 1
-                comparaisons += 1
+                echanges_bulle_opti += 1
+                comparaisons_bulle_opti += 1
 
             else:
-                comparaisons += 1
+                comparaisons_bulle_opti += 1
 
-    affectation = echanges * 3
+    affectation_bulle_opti = echanges_bulle_opti * 3
 
     #retourne les résusltats
-    return list, comparaisons, echanges, affectation
+    return list, comparaisons_bulle_opti, echanges_bulle_opti, affectation_bulle_opti
