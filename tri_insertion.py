@@ -1,20 +1,22 @@
+from copy import copy
 def tri_insertion(tab):
+    
+    copie_insertion = copy(tab)
     
     echanges_insertion = 0
     comparaisons_insertion = 0
     
-    for i in range(1, len(tab)):
-        k = tab[i]
+    for i in range(1, len(copie_insertion)):
+        k = copie_insertion[i]
         j = i - 1
-        
-        while j >= 0 and k < tab[j]:
-            tab[j + 1] = tab[j]
+        while j >= 0 and k < copie_insertion[j]:
+            copie_insertion[j + 1] = copie_insertion[j]
             j -= 1
             echanges_insertion += 1
             comparaisons_insertion += 1
+        copie_insertion[j + 1] = k
         comparaisons_insertion += 1
-        tab[j + 1] = k
         
         
     affectations_insertion = echanges_insertion * 3    
-    return tab, comparaisons_insertion, echanges_insertion, affectations_insertion
+    return echanges_insertion
