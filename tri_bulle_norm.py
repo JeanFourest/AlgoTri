@@ -22,7 +22,3 @@ def tri_bulle_norm(list):
 
     affectation = echanges * 3
     return list, comparaisons, echanges, affectation
-
-list = [10, 9, 7, 8]
-
-print(tri_bulle_norm(list))
