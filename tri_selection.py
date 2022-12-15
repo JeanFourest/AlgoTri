@@ -11,13 +11,13 @@ def tri_selection(tab):
         # Boucle qui compare la valeur prise en minimum à l'ensemble des valeurs du tableau
         for j in range(i+1, len(tab)):
             if tab[min] > tab[j]:
-                comparaison_selection += 1
+                echanges += 1
                 min = j
                 
         tempo = tab[i]
         tab[i] = tab[min]
         tab[min] = tempo
-        echanges += 1
+        comparaison_selection += 1
     
     affectation_selection = echanges * 3 
-    return tab, comparaison_selection, affectation_selection
+    return tab, comparaison_selection, echanges, affectation_selection
