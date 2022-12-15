@@ -35,7 +35,3 @@ def tri_bulle_norm(list):
     affectation_bulle_norm = echanges_bulle_norm * 3
 
     return list, comparaisons_bulle_norm, echanges_bulle_norm, affectation_bulle_norm
-
-tab = [4, 3, 2, 1]
-
-print(tri_bulle_norm(tab))
