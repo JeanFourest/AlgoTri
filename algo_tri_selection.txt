@@ -1,4 +1,4 @@
-DÉBUT TriSelection(paramètre tableau)
+DÉBUT tri_selection(paramètre tableau)
 
     POUR i JUSQU'À longueur(tableau) FAIRE
     minimum <- i
@@ -17,4 +17,4 @@ DÉBUT TriSelection(paramètre tableau)
 
     RENVOIE tableau
     
-FIN TriSelection
+FIN tri_selection
