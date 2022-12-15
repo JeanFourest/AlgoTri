@@ -16,4 +16,4 @@ PROCEDURE tri_bulle_opti(param tableau)
 
     FIN POUR
 
-FIN tri_bulle_norm
+FIN tri_bulle_opti
