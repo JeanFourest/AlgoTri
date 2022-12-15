@@ -29,6 +29,8 @@ repetition <- 0
 
                 comparaisons_tri_bulle_norm <- comparaisons_tri_bulle_norm + 1
 
+                permut <- TRUE
+
             FIN SI
 
         FIN POUR

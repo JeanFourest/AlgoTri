@@ -19,7 +19,7 @@ def tri_bulle_norm(list):
             if list[i] > list[i + 1]:
 
                 permut = True
-                # l'échange se passe ici
+                #l'échange se passe ici
                 list[i], list[i + 1] = list[i + 1], list[i]
 
                 comparaisons_bulle_norm += 1
@@ -28,11 +28,14 @@ def tri_bulle_norm(list):
             else:
 
                 comparaisons_bulle_norm += 1
+
+                permut = True
+
                 
     affectation_bulle_norm = echanges_bulle_norm * 3
 
     return list, comparaisons_bulle_norm, echanges_bulle_norm, affectation_bulle_norm
 
-tab = [1, 2, 4, 3]
+tab = [1, 2, 4, 3, 5]
 
 print(tri_bulle_norm(tab))
