@@ -1,4 +1,7 @@
+from copy import copy
 def tri_bulle_norm(list):
+    
+    copie_bulle_norm = copy(list)
     
     permut = True
 
@@ -14,13 +17,13 @@ def tri_bulle_norm(list):
 
         repetition += 1
         #boucle qui parcourt la longueur du tableau donné
-        for i in range(0, len(list) - repetition):
+        for i in range(0, len(copie_bulle_norm) - repetition):
             #si le nombre 1 est superieure au nombre 2 alors échanger
-            if list[i] > list[i + 1]:
+            if copie_bulle_norm[i] > copie_bulle_norm[i + 1]:
 
                 permut = True
                 # l'échange se passe ici
-                list[i], list[i + 1] = list[i + 1], list[i]
+                copie_bulle_norm[i], copie_bulle_norm[i + 1] = copie_bulle_norm[i + 1], copie_bulle_norm[i]
 
                 comparaisons_bulle_norm += 1
                 echanges_bulle_norm += 1
@@ -28,9 +31,8 @@ def tri_bulle_norm(list):
             else:
 
                 comparaisons_bulle_norm += 1
-
                 permut = True
                 
     affectation_bulle_norm = echanges_bulle_norm * 3
 
-    return list, comparaisons_bulle_norm, echanges_bulle_norm, affectation_bulle_norm
+    return echanges_bulle_norm

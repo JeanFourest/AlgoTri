@@ -1,19 +1,22 @@
+from copy import copy
 def tri_bulle_opti(list):
+    
+    copie_bulle_opti = copy(list)
 
     echanges_bulle_opti = 0
     comparaisons_bulle_opti = 0
     
     #longueur du tableau
-    long_tableau = len(list)
+    long_tableau = len(copie_bulle_opti)
 
     #fait les comparaisons
     for i in range(long_tableau - 1):
         for j in range(0, long_tableau - i - 1):
 
             #si nombre 1 est supérieure au nombre 2 alors faire l'échange
-            if list[j] > list[j + 1]:
+            if copie_bulle_opti[j] > copie_bulle_opti[j + 1]:
 
-                list[j], list[j + 1] = list[j + 1], list[j]
+                copie_bulle_opti[j], copie_bulle_opti[j + 1] = copie_bulle_opti[j + 1], copie_bulle_opti[j]
 
                 #les compteurs
                 echanges_bulle_opti += 1
@@ -25,4 +28,4 @@ def tri_bulle_opti(list):
     affectation_bulle_opti = echanges_bulle_opti * 3
 
     #retourne les résusltats
-    return list, comparaisons_bulle_opti, echanges_bulle_opti, affectation_bulle_opti
+    return echanges_bulle_opti
