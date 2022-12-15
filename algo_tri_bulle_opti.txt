@@ -1,0 +1,19 @@
+PROCEDURE tri_bulle_opti(param tableau)
+
+    long_tableau <- longueur du tableau
+
+    POUR i VARIANT DE long_tableau - 1
+
+        POUR j VARIANT DE 0 JUSQU'A long_tableau - i - 1
+
+            SI tableau[j] > tableau[j + 1]
+
+                ECHANGER tableau[j] ET tableau[j + 1]
+
+            FIN SI
+        
+        FIN POUR
+
+    FIN POUR
+
+FIN tri_bulle_opti
