@@ -12,6 +12,4 @@ def tri_bulle_norm(list):
 
     return list
 
-list = [1, 4, 2, 3, 10, 20, 11]
-
 print(tri_bulle_norm(list))
