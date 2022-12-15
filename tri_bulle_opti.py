@@ -32,3 +32,7 @@ def tri_bulle_opti(list):
     affectation_bulle_opti = echanges_bulle_opti * 3
 
     return list, comparaisons_bulle_opti, echanges_bulle_opti, affectation_bulle_opti
+
+tab = [1, 2, 4, 3]
+
+print(tri_bulle_opti(tab))
