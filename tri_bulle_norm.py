@@ -1,5 +1,8 @@
 def tri_bulle_norm(list):
 
+    echanges = 0
+    comparaisons = 0
+
     long_tableau = len(list)
 
     for i in range(long_tableau - 1):
@@ -10,6 +13,16 @@ def tri_bulle_norm(list):
 
                 list[j], list[j + 1] = list[j + 1], list[j]
 
-    return list
+                echanges += 1
+
+                comparaisons += 1
+
+            else:
+                comparaisons += 1
+
+    affectation = echanges * 3
+    return list, comparaisons, echanges, affectation
+
+list = [10, 9, 7, 8]
 
 print(tri_bulle_norm(list))
