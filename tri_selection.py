@@ -12,12 +12,19 @@ def tri_selection(tab):
         for j in range(i+1, len(tab)):
             if tab[min] > tab[j]:
                 echanges += 1
+                comparaison_selection += 1
                 min = j
+                
+            else:
+                comparaison_selection += 1
                 
         tempo = tab[i]
         tab[i] = tab[min]
         tab[min] = tempo
-        comparaison_selection += 1
     
     affectation_selection = echanges * 3 
     return tab, comparaison_selection, echanges, affectation_selection
+
+tab = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+
+print(tri_selection(tab))
