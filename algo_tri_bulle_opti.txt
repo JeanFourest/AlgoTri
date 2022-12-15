@@ -1,0 +1,26 @@
+
+PROCEDURE tri_bulle_normal(param TABLEAU)
+
+permut <- TRUE
+
+repetition <- 0
+    
+    REPETER TANT QUE permut == TRUE
+
+    permut <- FALSE
+
+    repetition <- repetition + 1
+
+        POUR i VARIANT DE 0 JUSQU'À longueur du TABLEAU - repetition FAIRE
+
+            SI TABLEAU[i] > TABLEAU[i + 1] ALORS
+
+                permut <- TRUE
+
+                ECHANGER TABLEAU[i] ET TABLEAU[i + 1]
+
+            FIN SI
+
+        FIN POUR
+
+FIN tri_bulle_normal
