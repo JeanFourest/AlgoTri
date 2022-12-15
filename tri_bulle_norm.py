@@ -28,6 +28,8 @@ def tri_bulle_norm(list):
             else:
 
                 comparaisons_bulle_norm += 1
+
+                permut = True
                 
     affectation_bulle_norm = echanges_bulle_norm * 3
 
