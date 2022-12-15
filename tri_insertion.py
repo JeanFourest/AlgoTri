@@ -17,7 +17,3 @@ def tri_insertion(tab):
         
     affectations_insertion = echanges_insertion * 3    
     return tab, comparaisons_insertion, echanges_insertion, affectations_insertion
-
-tab = [10, 9, 8, 7]
-
-print(tri_insertion(tab))
