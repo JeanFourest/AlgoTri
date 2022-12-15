@@ -3,8 +3,8 @@ def tri_bulle_opti(list):
     permut = True
 
     #compteurs pour les comparaisons et échanges qui seront afficher à la fin de la fonction
-    comparaisons_tri_bulle_opti = 0
-    echanges_tri_bulle_opti = 0
+    comparaisons_bulle_opti = 0
+    echanges_bulle_opti = 0
 
     repetition = 0
     #si permut == True alors faire les échanges nécessaire
@@ -22,15 +22,13 @@ def tri_bulle_opti(list):
                 # l'échange se passe ici
                 list[i], list[i + 1] = list[i + 1], list[i]
 
-                comparaisons_tri_bulle_opti += 1
-                echanges_tri_bulle_opti += 3
+                comparaisons_bulle_opti += 1
+                echanges_bulle_opti += 1
 
             else:
 
-                comparaisons_tri_bulle_opti += 1
+                comparaisons_bulle_opti += 1
+                
+    affectation_bulle_opti = echanges_bulle_opti * 3
 
-    #affiche les compteurs
-    print(f'nombre de comparaisons: {comparaisons_tri_bulle_opti}')
-    print(f"nombre d'échanges/affectations: {echanges_tri_bulle_opti}")
-
-    return list
+    return list, comparaisons_bulle_opti, echanges_bulle_opti, affectation_bulle_opti
