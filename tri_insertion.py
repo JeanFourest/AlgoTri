@@ -10,8 +10,9 @@ def tri_insertion(tab):
         while j >= 0 and k < tab[j]:
             tab[j + 1] = tab[j]
             j -= 1
+            echanges_insertion += 1
             comparaisons_insertion += 1
-        echanges_insertion += 1
+        comparaisons_insertion += 1
         tab[j + 1] = k
         
         
