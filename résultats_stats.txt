@@ -1,0 +1,25 @@
+---------- Résultats de la fonction stat avec les différents tris ----------
+
+---- Tri Sélection ----
+
+10 83.1
+15 225.6
+20 444.1
+
+---- Tri Insertion ---- 
+
+10 85.0
+15 261.9
+20 547.6
+
+---- Tri Bulle Normal ----
+
+10 104.1
+15 318.6
+20 666.2
+
+---- Tri Bulle Optimisé ----
+
+10 111.6
+15 309.0
+20 644.6

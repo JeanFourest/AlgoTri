@@ -1,0 +1,72 @@
+----Tri Sélection----
+
+--Meilleure des cas--
+
+comparaisons : 45
+affectations : 0
+
+--Pire des cas--
+
+comparaisons : 45
+affectations : 75
+
+--Cas aléatoire--
+
+comparaisons : 45
+affectations : 30
+
+----Tri Insertion----
+
+--Meilleure des cas--
+
+comparaisons : 9
+affectations : 0
+
+--Pire des cas--
+
+comparaisons : 54
+affectations : 135
+
+--Cas aléatoire--
+
+comparaisons : 33
+affectations : 72
+
+----Tri Bulle Normal----
+
+--Meilleure des cas--
+
+comparaisons : 45
+affectations : 0
+
+--Pire des cas--
+
+comparaisons : 45
+affectations : 135
+
+--Cas aléatoire--
+
+comparaisons : 45
+affectations : 72
+
+----Tri Bulle Optimisé----
+
+--Meilleure des cas--
+
+comparaisons : 45
+affectations : 0
+
+--Pire des cas--
+
+comparaisons : 45
+affectations : 135
+
+--Cas aléatoire--
+
+comparaisons : 45
+affectations : 72
+
+
+
+
+

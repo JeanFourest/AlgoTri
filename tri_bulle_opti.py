@@ -26,6 +26,7 @@ def tri_bulle_opti(list):
                 comparaisons_bulle_opti += 1
 
     affectation_bulle_opti = echanges_bulle_opti * 3
+    operation_bulle_opti = affectation_bulle_opti + comparaisons_bulle_opti
 
     #retourne les résusltats
-    return echanges_bulle_opti
+    return operation_bulle_opti

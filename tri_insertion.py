@@ -18,5 +18,6 @@ def tri_insertion(tab):
         comparaisons_insertion += 1
         
         
-    affectations_insertion = echanges_insertion * 3    
-    return echanges_insertion
+    affectations_insertion = echanges_insertion * 3
+    operation_insertion = affectations_insertion + comparaisons_insertion
+    return operation_insertion

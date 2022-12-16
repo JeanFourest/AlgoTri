@@ -9,6 +9,9 @@ def stat(min, max, step, nbr):
     contenant = []
     moyenne = 0
     somme = 0
+
+    print("Voici les différents tris \n Tri par sélection (1) \n Tri par insertion (2) \n Tri à bulle normal (3) \n Tri à bulle optimisé (4) \n")
+    choix = int(input("Quel tri choisissez vous ? : "))
     
     while min <= max:
         
@@ -20,8 +23,14 @@ def stat(min, max, step, nbr):
             contenant.append(tab)
             
         for i in range(len(contenant)):
-            
-            tri = tri_bulle_opti.tri_bulle_opti(contenant[i])
+            if choix == 1:
+                tri = tri_selection.tri_selection(contenant[i])
+            elif choix == 2:
+                tri = tri_insertion.tri_insertion(contenant[i])
+            elif choix == 3:
+                tri = tri_bulle_norm.tri_bulle_norm(contenant[i])
+            elif choix == 4:
+                tri = tri_bulle_opti.tri_bulle_opti(contenant[i])
             somme += tri
             
         moyenne = somme / min

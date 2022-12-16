@@ -34,5 +34,6 @@ def tri_bulle_norm(list):
                 permut = True
                 
     affectation_bulle_norm = echanges_bulle_norm * 3
+    operation_bulle_norm = affectation_bulle_norm + comparaisons_bulle_norm
 
-    return echanges_bulle_norm
+    return operation_bulle_norm

@@ -27,4 +27,6 @@ def tri_selection(tab):
         copie_selection[min] = tempo
     
     affectation_selection = echanges_selection * 3 
-    return echanges_selection
+    operation_selection = affectation_selection + comparaison_selection
+    return operation_selection
+
